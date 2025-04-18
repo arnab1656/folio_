@@ -2,45 +2,20 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-
-interface Education {
-  period: string;
-  degree: string;
-  institution: string;
-  location: string;
-  description: string;
-}
-
-const educationData: Education[] = [
-  {
-    period: "2020 - 2024",
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Your University Name",
-    location: "City, State",
-    description:
-      "Studied core computer science subjects including Data Structures, Algorithms, Database Management, and Web Development.",
-  },
-  {
-    period: "2018 - 2020",
-    degree: "Higher Secondary Education",
-    institution: "Your School Name",
-    location: "City, State",
-    description:
-      "Completed higher secondary education with focus on Mathematics, Physics, and Computer Science.",
-  },
-];
+import { educationData } from "@/data/educationData";
 
 const EducationSection = () => {
   return (
-    <section id="education" className="py-16 bg-[#121212]">
+    <section id="education" className="pt-5 pb-16 bg-[#121212]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <h2 className="text-3xl font-bold text-white">Education</h2>
+          <h2 className="text-3xl font-bold text-blue-600">Education</h2>
           <p className="mt-3 text-gray-400 text-sm">
             My academic journey and qualifications
           </p>
@@ -57,6 +32,7 @@ const EducationSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className={`relative grid md:grid-cols-2 gap-6 mb-6  md:text-right`}
             >
               {/* Timeline dot */}

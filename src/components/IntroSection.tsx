@@ -51,7 +51,7 @@ const IntroSection = () => {
                 </div>
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/arnab1656"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

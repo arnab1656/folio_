@@ -12,7 +12,8 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-6"
+          viewport={{ once: true }}
+          className="text-center mb-4"
         >
           <h2 className="text-xl font-bold text-blue-600">About Me</h2>
         </motion.div>
@@ -21,20 +22,21 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
           className="bg-gray-800/90 rounded-xl border border-gray-700/50 overflow-hidden
           shadow-[0_8px_30px_rgb(0,0,0,0.7)] 
           hover:shadow-[0_20px_40px_rgba(0,0,0,0.7),0_0_20px_rgba(59,130,246,0.3)]
           transition-all duration-300"
         >
           <div className="flex flex-row md:flex-col">
-            <div className="bg-gray-800 pl-4 py-2 border-b border-gray-700/50">
-              <div className="text-blue-400 font-xs text-bold">Know Me</div>
+            <div className="bg-gray-800 pl-4 py-1 border-b border-gray-700/50">
+              <div className="text-blue-400 text-lg font-bold">Know Me...</div>
             </div>
 
             <div className="flex flex-row p-5">
               <div className="w-[350px] h-[400px] flex-shrink-0">
                 <img
-                  src="/jordan.jpg"
+                  src="/profile/stand.jpg"
                   alt="Arnab Paul"
                   className="w-[350px] h-full object-cover"
                 />

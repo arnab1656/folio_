@@ -1,25 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
-const socialLinks = [
-  {
-    href: "https://github.com/yourusername",
-    icon: FaGithub,
-    label: "GitHub",
-  },
-  {
-    href: "https://linkedin.com/in/yourusername",
-    icon: FaLinkedin,
-    label: "LinkedIn",
-  },
-  {
-    href: "mailto:your.email@example.com",
-    icon: FaEnvelope,
-    label: "Email",
-  },
-];
+import { socialLinks } from "@/data/socialLinksData";
 
 const Footer = () => {
   return (

@@ -59,6 +59,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
           className="max-w-4xl mx-auto bg-[#1F1F1F] rounded-sm border border-[#383838] p-6 shadow-xl"
         >
           <div className="text-center mb-6">
