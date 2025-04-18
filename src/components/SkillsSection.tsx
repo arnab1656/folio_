@@ -9,8 +9,13 @@ import {
   SiNextdotjs,
   SiExpress,
   SiPrisma,
-  // SiKafka,
-  // SiWebsocket,
+  SiMongodb,
+  SiPostgresql,
+  SiRedis,
+  SiFastapi,
+  SiFirebase,
+  SiFigma,
+  SiCplusplus,
 } from "react-icons/si";
 
 interface Skill {
@@ -30,8 +35,13 @@ const skills: Skill[] = [
   { name: "Docker", icon: FaDocker, color: "text-[#2496ED]" },
   { name: "Git", icon: FaGitAlt, color: "text-[#F05032]" },
   { name: "Prisma", icon: SiPrisma, color: "text-white" },
-  // { name: "Kafka", icon: SiKafka, color: "text-white" },
-  // { name: "WebSocket", icon: SiWebsocket, color: "text-white" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-[#47A248]" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#336791]" },
+  { name: "Redis", icon: SiRedis, color: "text-[#DC382D]" },
+  { name: "FastAPI", icon: SiFastapi, color: "text-[#009688]" },
+  { name: "Firebase", icon: SiFirebase, color: "text-[#FFCA28]" },
+  { name: "Figma", icon: SiFigma, color: "text-[#F24E1E]" },
+  { name: "C++", icon: SiCplusplus, color: "text-[#00599C]" },
 ];
 
 const SkillsSection = () => {
@@ -42,7 +52,7 @@ const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center mb-16 text-blue-600"
+          className="text-xl font-bold text-center mb-16 text-blue-600"
         >
           Top Skills
         </motion.h2>
@@ -58,7 +68,7 @@ const SkillsSection = () => {
                 shadow: "0px 10px 20px rgba(0, 0, 0, 0.4)",
               }}
               transition={{ duration: 0.2, delay: index * 0.1 }}
-              className="flex items-center gap-3 bg-gray-800/90 rounded-lg px-6 py-3 border border-gray-700/50 min-w-[180px] flex-grow-0 cursor-pointer 
+              className="flex items-center gap-3 bg-gray-800/90 rounded-lg px-6 py-3 border border-gray-700/50 min-w-[180px] flex-grow-0 
               shadow-[0_8px_16px_rgba(0,0,0,0.5),0_0_4px_rgba(255,255,255,0.05)] 
               hover:shadow-[0_16px_32px_rgba(0,0,0,0.6),0_0_8px_rgba(59,130,246,0.2)] 
               transition-all duration-300"
