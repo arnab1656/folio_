@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +10,6 @@ const Navbar = () => {
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#about", label: "About" },
-    { href: "#education", label: "Education" },
-    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -34,12 +31,16 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <ThemeToggle />
+            <Link
+              href="#contact"
+              className="px-4 py-2 bg-blue-600 text-white rounded-sm hover:bg-blue-500 transition-colors"
+            >
+              Let&apos;s Talk
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
-            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200"
@@ -93,6 +94,13 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="#contact"
+              className="block px-3 py-2 mt-2 text-center bg-blue-600 text-white rounded-sm hover:bg-blue-500 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Let&apos;s Talk
+            </Link>
           </div>
         </div>
       )}

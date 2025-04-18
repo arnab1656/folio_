@@ -33,7 +33,7 @@ const educationData: Education[] = [
 const EducationSection = () => {
   return (
     <section id="education" className="py-16 bg-[#121212]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,9 +57,7 @@ const EducationSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`relative grid md:grid-cols-2 gap-6 mb-6 ${
-                index % 2 === 0 ? "md:text-right" : "md:text-left"
-              }`}
+              className={`relative grid md:grid-cols-2 gap-6 mb-6  md:text-right`}
             >
               {/* Timeline dot */}
               <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-blue-500 rounded-full mt-6 border-2 border-[#121212]" />

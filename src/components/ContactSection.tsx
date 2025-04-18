@@ -54,20 +54,20 @@ const ContactSection = () => {
       id="contact"
       className="h-screen bg-[#121212] flex items-center justify-center"
     >
-      <div className="max-w-3xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl w-full px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-[#1F1F1F] rounded-sm border border-[#383838] p-6 shadow-xl"
+          className="max-w-4xl mx-auto bg-[#1F1F1F] rounded-sm border border-[#383838] p-6 shadow-xl"
         >
           <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold text-white">Contact Me</h2>
-            <div className="flex items-center justify-center gap-2 mt-3 text-gray-400">
+            <h2 className="text-lg font-bold text-blue-400 pb-8">Contact Me</h2>
+            <div className="flex items-center justify-center gap-2 mt-3 mx-auto p-2  text-white bg-[#161313] w-1/3 rounded-sm">
               <FaEnvelope className="text-blue-400" />
               <a
-                href="mailto:arnab.paul.1656@gmail.com"
-                className="text-sm hover:text-blue-400 transition-colors"
+                // href="mailto:arnab.paul.1656@gmail.com"
+                className="text-sm"
               >
                 arnab.paul.1656@gmail.com
               </a>
@@ -84,7 +84,8 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 bg-[#2A2A2A] border border-[#404040] text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-3 py-2 bg-[#2A2A2A] border border-white text-white text-sm 
+                  focus:outline-none focus:border-blue-500 focus:ring-[0.5px] focus:ring-blue-500"
                   placeholder="Your name"
                 />
               </div>
@@ -97,7 +98,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 bg-[#2A2A2A] border border-[#404040] text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-3 py-2 bg-[#2A2A2A] border border-white text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-[0.5px]  focus:ring-blue-500"
                   placeholder="your@email.com"
                 />
               </div>
@@ -111,7 +112,7 @@ const ContactSection = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-2 bg-[#2A2A2A] border border-[#404040] text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                className="w-full px-3 py-2 bg-[#2A2A2A] border border-white text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-[0.5px] focus:ring-blue-500"
                 placeholder="Subject"
               />
             </div>
@@ -124,7 +125,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full px-3 py-2 bg-[#2A2A2A] border border-[#404040] text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                className="w-full px-3 py-2 bg-[#2A2A2A] border border-white text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-[0.5px] focus:ring-blue-500"
                 placeholder="Message"
               />
             </div>
@@ -145,7 +146,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-sm hover:bg-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed w-full cursor-pointer"
+                className="px-6 py-2.5 bg-black text-white text-sm font-medium rounded-sm hover:text-black hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed w-full cursor-pointer"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
