@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Scalable Chat Application",
     description:
       "A high-performance chat application supporting multiple users, real-time messaging, and file sharing. Built with a microservices architecture for optimal scalability and performance.",
-    image: "/project/docker.jpg",
+    image: "/project/scaleimage.jpg",
     technologies: [
       "React",
       "Node.js",
