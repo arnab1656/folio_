@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "WebRTC P2P Video Call",
     description:
       "A real-time peer-to-peer video calling application built with WebRTC. Features include HD video quality, screen sharing capabilities, and instant connection between peers with minimal latency.",
-    image: "/gibli_rtc.png",
+    image: "/project/webrtc.png",
     technologies: ["WebRTC", "React", "Node.js", "Socket.io", "WebSockets"],
     githubLink: "https://github.com/yourusername/webrtc-video-call",
     isLive: false,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Scalable Chat Application",
     description:
       "A high-performance chat application supporting multiple users, real-time messaging, and file sharing. Built with a microservices architecture for optimal scalability and performance.",
-    image: "/sclaChat.jpg",
+    image: "/project/docker.jpg",
     technologies: [
       "React",
       "Node.js",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     title: "Docker Containerization Platform",
     description:
       "A comprehensive containerization platform that simplifies deployment and management of applications. Features include automatic scaling, load balancing, and container orchestration.",
-    image: "/dockerC.jpg",
+    image: "/project/docker.jpg",
     technologies: ["Docker", "Kubernetes", "Go", "React", "PostgreSQL"],
     isLive: false,
     githubLink: "https://github.com/yourusername/docker-platform",
