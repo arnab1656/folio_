@@ -74,7 +74,7 @@ const IntroSection = () => {
                 <div className="absolute inset-0 bg-blue-500 opacity-30 rounded-blob blur-xl" />
               </div>
               <Image
-                src="/profile/heroimage.jpg"
+                src="/heroimage.jpg"
                 alt="Arnab"
                 fill
                 className="rounded-blob object-cover z-10 relative"
