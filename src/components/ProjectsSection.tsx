@@ -5,12 +5,13 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "@/data/projectData";
+import { Project } from "@/data/projectData";
 
 const ProjectsSection = () => {
   const [carouselDots, setCarouselDots] = useState<number[]>([]);
   const [currentDotIndex, setCurrentDotIndex] = useState(0);
   const [projectSetsMap, setProjectSetsMap] = useState<
-    Map<number, ((typeof projects)[0] | null)[]>
+    Map<number, (Project | null)[]>
   >(new Map());
 
   const cardsPerSet = 3;
@@ -23,10 +24,13 @@ const ProjectsSection = () => {
     setCarouselDots(dots);
 
     // Create and initialize project sets map
-    const setsMap = new Map<number, ((typeof projects)[0] | null)[]>();
+    const setsMap = new Map<number, (Project | null)[]>();
     dots.forEach((dotIndex) => {
       const startIndex = dotIndex * cardsPerSet;
-      const projectSet = projects.slice(startIndex, startIndex + cardsPerSet);
+      const projectSet: (Project | null)[] = projects.slice(
+        startIndex,
+        startIndex + cardsPerSet
+      );
 
       while (projectSet.length < cardsPerSet) {
         projectSet.push(null);
