@@ -45,4 +45,41 @@ export const projects: Project[] = [
     isLive: false,
     githubLink: "https://github.com/yourusername/docker-platform",
   },
+  {
+    title: "Docker Containerization Platform",
+    description:
+      "A comprehensive containerization platform that simplifies deployment and management of applications. Features include automatic scaling, load balancing, and container orchestration.",
+    image: "/project/docker.jpg",
+    technologies: ["Docker", "Kubernetes", "Go", "React", "PostgreSQL"],
+    isLive: false,
+    githubLink: "https://github.com/yourusername/docker-platform",
+  },
+  {
+    title: "Docker Containerization Platform",
+    description:
+      "A comprehensive containerization platform that simplifies deployment and management of applications. Features include automatic scaling, load balancing, and container orchestration.",
+    image: "/project/docker.jpg",
+    technologies: ["Docker", "Kubernetes", "Go", "React", "PostgreSQL"],
+    isLive: false,
+    githubLink: "https://github.com/yourusername/docker-platform",
+  },
+  {
+    title: "Docker Containerization Platform",
+    description:
+      "A comprehensive containerization platform that simplifies deployment and management of applications. Features include automatic scaling, load balancing, and container orchestration.",
+    image: "/project/docker.jpg",
+    technologies: ["Docker", "Kubernetes", "Go", "React", "PostgreSQL"],
+    isLive: false,
+    githubLink: "https://github.com/yourusername/docker-platform",
+  },
+  {
+    title: "WebRTC P2P Video Call",
+    description:
+      "A real-time peer-to-peer video calling application built with WebRTC. Features include HD video quality, screen sharing capabilities, and instant connection between peers with minimal latency.",
+    image: "/project/webrtc.png",
+    technologies: ["WebRTC", "React", "Node.js", "Socket.io", "WebSockets"],
+    githubLink: "https://github.com/yourusername/webrtc-video-call",
+    isLive: false,
+    liveLink: "https://webrtc-video-call.demo",
+  },
 ];
