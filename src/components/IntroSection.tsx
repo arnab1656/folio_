@@ -9,7 +9,7 @@ const IntroSection = () => {
   return (
     <section
       id="intro"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800"
+      className="min-h-screen flex justify-center items-center bg-gradient-to-r from-gray-900 to-gray-800"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -17,9 +17,9 @@ const IntroSection = () => {
         transition={{ duration: 0.8 }}
         className="text-center"
       >
-        <div className="w-full flex flex-row items-center justify-center gap-50">
-          <div>
-            <h1 className="text-6xl mb-4 text-white text-left">
+        <div className="w-full flex flex-col-reverse items-center justify-center gap-8 sm:flex-col md:flex-row md:gap-25 md:px-4 lg:gap-50">
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4 text-white">
               Hi! I am{" "}
               <div className="pb-2 pt-2 font-bold">
                 <span className="text-white">Arnab </span>{" "}
@@ -27,13 +27,10 @@ const IntroSection = () => {
                 <span className="text-white">.</span>
               </div>
             </h1>
-            <p className="text-2xl font-bold text-blue-400 mb-12">
+            <p className="text-xl sm:text-2xl font-bold text-blue-400 mb-8 md:mb-12">
               I&apos;m a Full Stack Software Developer
             </p>
-            {/* <p className="text-2xl text-left font-bold text-blue-400 mb-12">
-              And a solutionista
-            </p> */}
-            <div className="flex flex-row justify-start space-x-9">
+            <div className="flex flex-row justify-center md:justify-start space-x-9">
               <a href="mailto:arnab.paul.1656@gmail.com" className="group">
                 <div className="w-14 h-14  rounded-full border border-gray-500 flex items-center justify-center text-[#EA4335] group-hover:text-[#EA4335] transition-colors hover:bg-white">
                   <SiGmail size={20} />
@@ -67,7 +64,7 @@ const IntroSection = () => {
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative w-[300px] h-[300px]"
+            className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px]"
           >
             <div className="relative w-full h-full">
               <div className="absolute inset-0 animate-blob">
