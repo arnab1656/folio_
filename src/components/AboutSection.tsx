@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section id="about" className="py-16 bg-gray-900">
-      <div className="max-w-6xl mx-48 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl px-4 sm:px-6 lg:px-8 sm:mx-24 md:mx-48">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,21 +28,21 @@ const AboutSection = () => {
           hover:shadow-[0_20px_40px_rgba(0,0,0,0.7),0_0_20px_rgba(59,130,246,0.3)]
           transition-all duration-300"
         >
-          <div className="flex flex-row md:flex-col">
+          <div className="flex flex-col">
             <div className="bg-gray-800 pl-4 py-1 border-b border-gray-700/50">
               <div className="text-blue-400 text-lg font-bold">Know Me...</div>
             </div>
 
-            <div className="flex flex-row p-5">
-              <div className="w-[350px] h-[400px] flex-shrink-0">
+            <div className="flex flex-col md:flex-row p-5 gap-6">
+              <div className="w-full md:w-[350px] h-[300px] md:h-[400px] flex-shrink-0">
                 <img
                   src="/profile/stand.jpg"
                   alt="Arnab Paul"
-                  className="w-[350px] h-full object-cover"
+                  className="w-full h-full object-cover rounded-lg md:rounded-none"
                 />
               </div>
 
-              <div className="px-6 space-y-3 flex-grow">
+              <div className="space-y-3 flex-grow">
                 <div className="space-y-3 text-xs text-gray-300">
                   <p className="leading-relaxed">
                     I&apos;m a Full Stack Developer who thrives on turning
@@ -52,23 +52,23 @@ const AboutSection = () => {
                     solving problems with code.
                   </p>
                   <p className="leading-relaxed">
-                    I’ve developed a strong interest in scaling both frontend
-                    and backend architectures. From managing state in React,
-                    exploring Next.js, to working with the MERN stack — I love
-                    building systems that perform well and feel great to use. I
-                    learn best by diving in, testing, breaking, and building
-                    until it all clicks.
+                    I&apos;ve developed a strong interest in scaling both
+                    frontend and backend architectures. From managing state in
+                    React, exploring Next.js, to working with the MERN stack — I
+                    love building systems that perform well and feel great to
+                    use. I learn best by diving in, testing, breaking, and
+                    building until it all clicks.
                   </p>
                   <p>
-                    &quot;Let’s build something awesome — or settle the real
-                    debate: Messi or Ronaldo?&quot;
+                    &quot;Let&apos;s build something awesome — or settle the
+                    real debate: Messi or Ronaldo?&quot;
                   </p>
                   <p className="leading-relaxed">
-                    Outside tech, you’ll find me at the gym, playing football,
-                    gaming, or deep into a good book. I’ve got a knack for
-                    tossing unexpected fun into conversations, and recently,
-                    I’ve been exploring spirituality to grow beyond the code and
-                    build some inner architecture too.
+                    Outside tech, you&apos;ll find me at the gym, playing
+                    football, gaming, or deep into a good book. I&apos;ve got a
+                    knack for tossing unexpected fun into conversations, and
+                    recently, I&apos;ve been exploring spirituality to grow
+                    beyond the code and build some inner architecture too.
                   </p>
                   <p className="leading-relaxed">
                     People say I think five steps ahead even when we&apos;re
