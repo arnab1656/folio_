@@ -64,7 +64,7 @@ const ContactSection = () => {
         >
           <div className="text-center mb-6">
             <h2 className="text-lg font-bold text-blue-400 pb-8">Contact Me</h2>
-            <div className="flex items-center justify-center gap-2 mt-3 mx-auto p-2  text-white bg-[#161313] w-1/3 rounded-sm">
+            <div className="flex items-center justify-center gap-2 mt-3 mx-auto p-2  text-white bg-[#161313] rounded-sm w-fit">
               <FaEnvelope className="text-blue-400" />
               <a
                 // href="mailto:arnab.paul.1656@gmail.com"

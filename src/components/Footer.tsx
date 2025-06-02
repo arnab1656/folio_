@@ -5,7 +5,7 @@ import { socialLinks } from "@/data/socialLinksData";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <section className="bg-gray-900 text-white py-8">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex space-x-6">
@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
