@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -55,6 +55,19 @@ const IntroSection = () => {
               >
                 <div className="w-14 h-14 rounded-full border border-gray-500 flex items-center justify-center text-white group-hover:text-white transition-colors hover:bg-black">
                   <FaGithub size={20} />
+                </div>
+              </a>
+              <a
+                href="https://www.unimad.ai/resume/arnab-resume"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="w-auto h-14 px-4 rounded-full border border-gray-500 flex items-center gap-2 text-blue-400 group-hover:text-blue-600 transition-colors hover:bg-white">
+                  <FaFileAlt size={20} />
+                  <span className="text-sm hidden sm:inline-block text-inherit font-medium">
+                    Resume
+                  </span>
                 </div>
               </a>
             </div>
