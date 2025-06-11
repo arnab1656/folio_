@@ -3,17 +3,17 @@ import { SiGmail } from "react-icons/si";
 
 export const socialLinks = [
   {
-    href: "mailto:your.email@example.com",
+    href: "mailto:arnab.paul.1656@gmail.com",
     icon: SiGmail,
     label: "Email",
   },
   {
-    href: "https://github.com/yourusername",
+    href: "https://github.com/arnab1656",
     icon: FaGithub,
     label: "GitHub",
   },
   {
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/arnabp1/",
     icon: FaLinkedin,
     label: "LinkedIn",
   },
