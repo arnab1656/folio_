@@ -98,8 +98,9 @@ export const projects: Project[] = [
     description: "This is a web app that allows you Scarap data from LinkedIn.",
     image: "/project/webS.jpg",
     technologies: ["Next.js", "Tailwind", "Socket.io client"],
-    isLive: false,
+    isLive: true,
     githubLink: "https://github.com/arnab1656/scrapple_v1.0",
+    liveLink: "https://scrapple-v1-0.vercel.app/",
   },
   {
     title: "ScradIen Backend",
