@@ -111,14 +111,4 @@ export const projects: Project[] = [
     isLive: false,
     githubLink: "https://github.com/arnab1656/scrapd_in_Back",
   },
-  {
-    title: "CouResa",
-    description:
-      "This is a CouResa for Simplifying the Course Enrollment program for the students.",
-    image: "/project/cou.png",
-    technologies: ["Node.js", "Next.js", "MUI", "Prisma ORM", "MongoDB"],
-    isLive: true,
-    githubLink: "https://github.com/arnab1656/cou",
-    liveLink: "https://couresa.vercel.app/",
-  },
 ];
